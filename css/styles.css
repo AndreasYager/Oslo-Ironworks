@@ -1,0 +1,14 @@
+.logo {
+    width: relative;
+    height: 5vh;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+.active {
+    text-decoration: underline;
+    ;
+}
