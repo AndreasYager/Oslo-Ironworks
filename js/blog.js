@@ -47,6 +47,11 @@ function displayPosts(posts) {
         postElement.appendChild(postTitle);
         postElement.appendChild(postExcerpt);
 
+        postElement.addEventListener('click', () => {
+            window.location.href = `post.html?post=${post.id}`;
+        });
+        
+
         postsContainer.prepend(postElement); 
     });
 }
