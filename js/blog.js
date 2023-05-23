@@ -2,6 +2,8 @@ let currentPage = 1; // keeps track of the current page
 
 // Fetch posts from Wordpress
 function fetchPosts() {
+    const loadingText = document.getElementById('loadingText');
+    loadingText.textContent = 'Loading...'; 
     fetch(`https://osloironworks.andreasyager.no/wp-json/wp/v2/posts?page=${currentPage}&per_page=10`)
         .then(response => {
             if (!response.ok) { 
@@ -15,15 +17,18 @@ function fetchPosts() {
             if (posts.length < 10) {
                 document.getElementById('message').textContent = 'No more posts to load';
             }
+            loadingText.textContent = '';
         })
         .catch(error => {
             console.error(error);
             document.getElementById('message').textContent = 'No more posts to load';
+            loadingText.textContent = '';
         });
 }
 
 // Display posts on the webpage
 function displayPosts(posts) {
+    const postsContainer = document.getElementById('postsContainer');
     const main = document.querySelector('main');
 
     posts.forEach(post => {
@@ -37,7 +42,7 @@ function displayPosts(posts) {
         postElement.appendChild(postTitle);
         postElement.appendChild(postExcerpt);
 
-        main.appendChild(postElement);
+        postsContainer.prepend(postElement); 
     });
 }
 
