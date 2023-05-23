@@ -13,6 +13,20 @@ a {
     ;
 }
 
+#postsContainer img {
+  width: 70%;
+  height: 30vh;
+  object-fit: cover;
+}
+
+#postsContainer {
+  width: 60%;
+  text-align: center;
+  margin-left: 20%
+}
+
+/*Contact*/
+
 #contactForm {
     display: flex;
     flex-direction: column;
