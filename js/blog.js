@@ -29,21 +29,32 @@ function fetchPosts() {
 // Display posts on the webpage
 function displayPosts(posts) {
     const postsContainer = document.getElementById('postsContainer');
-    const main = document.querySelector('main');
 
-    posts.forEach(post => {
+    posts.forEach(async post => {
         const postElement = document.createElement('div');
+        const postImage = document.createElement('img')
         const postTitle = document.createElement('h2');
         const postExcerpt = document.createElement('p');
 
         postTitle.textContent = post.title.rendered;
         postExcerpt.innerHTML = post.excerpt.rendered;
 
+        const imageUrl = await fetchImage(post.featured_media);
+        postImage.src = imageUrl;
+        postImage.alt = post.title.rendered;
+
+        postElement.appendChild(postImage);
         postElement.appendChild(postTitle);
         postElement.appendChild(postExcerpt);
 
         postsContainer.prepend(postElement); 
     });
+}
+
+async function fetchImage(mediaId) {
+    const response = await fetch(`https://osloironworks.andreasyager.no/wp-json/wp/v2/media/${mediaId}`);
+    const media = await response.json();
+    return media.source_url;
 }
 
 // Call fetchPosts when the page loads
