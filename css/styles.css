@@ -71,3 +71,22 @@ a {
     color: green;
     font-size: small;
   }
+  
+
+  /*Slider*/
+  #sliderPostsContainer {
+    display: flex;
+  }
+
+  #sliderPostsContainer img {
+    width: 80%;
+    height: 20vh;
+    object-fit: cover;
+    margin-left: 10%;
+  }
+
+  #sliderPostsContainer h2, #sliderPostsContainer p {
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+  }
