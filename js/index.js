@@ -99,3 +99,5 @@ document.getElementById('nextBtn').addEventListener('click', () => {
 
 
 document.addEventListener('DOMContentLoaded', fetchPosts);
+window.addEventListener('resize', displaySliderPosts);
+
