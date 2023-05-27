@@ -9,29 +9,38 @@
 </head>
 <body>
     <header>
-        <a href="index.html"><img class="logo" src="images/OSLOIWlogo-removebg-preview.png" alt="Logo"/> </a>
-        <a class="active" href="blog.html">Blog</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-        <button id="mail">Join our mailing list</button>
+        <div class="headerflex">
+            <a href="index.html"><img class="logo" src="images/OSLOIWlogo-removebg-preview.png" alt="Logo"/> </a>
+            <div class="headerlinks">
+                <a href="blog.html">Blog</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <button id="mail">Join our mailing list!</button>
+        </div>
     </header>
-    <main></main>
-    <button id="loadMoreBtn">Load More</button>
-    <p id="message"></p>
+    <main>
+        <h1>Recent posts:</h1>
+        <div id="postsContainer"></div>
+        <div id="loadingText"></div>
+        <p id="message"></p>
+        <button id="loadMoreBtn">Load more...</button>
+    </main>
     <footer>
         <button id="topBtn">↑Back to top↑</button>
-        <div class="qlinks">
-            <h4>Quick links:</h4>
-            <a class="active" href="blog.html">Blog</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
+        <div class="footflex">
+            <div class="qlinks"> 
+                <h4>Quick links:</h4> 
+                <a href="blog.html">Blog</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
             <div class="mailinglist">
                 <p>Join our mailing list!</p>
-                <label>
-                    Email:
-                    <input name="email" id="email" />
-                </label>
-            <button>Submit</button>
+                <input type="email" name="email" id="footerEmail" placeholder="email@email.com" />
+                <button>Submit</button>           
+            </div>
         </div>
     </footer>
     <script src="js/script.js"></script>

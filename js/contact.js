@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function() {
 const form = document.querySelector("#contactForm");
 const firstName = document.querySelector("#firstName");
 const firstNameError = document.querySelector("#firstNameError");
@@ -55,3 +56,4 @@ function validateEmail(email) {
     const patternMatches = regEx.test(email);
     return patternMatches;
 }
+});

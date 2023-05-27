@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oslo Ironworks | Home</title>
+    <title>Oslo Ironworks | Blog</title>
     <link href="css/styles.css" rel="stylesheet" >
+
 </head>
 <body>
     <header>
@@ -20,17 +21,10 @@
         </div>
     </header>
     <main>
-        <div class="aboutimg"><img src="images/OSLOIWlogo-removebg-preview.png" alt="Logo"/> </div>
-        <h2 class="homeh2">Featured Post:</h2>
-        <div id="featuredPostContainer">   
-        </div>
-            <h2 class="homeh2">Recent posts:</h2>
-            <div id="sliderContainer">
-                <button id="prevBtn">&#9664;</button>
-                <div id="sliderPostsContainer"></div>
-                    <button id="nextBtn">&#9654;</button>
-            </div>
+        <div id="postDetail"></div>
     </main>
+    
+
     <footer>
         <button id="topBtn">↑Back to top↑</button>
         <div class="footflex">
@@ -42,15 +36,13 @@
             </div>
 
             <div class="mailinglist">
-                <div id="successMessage"></div>
                 <p>Join our mailing list!</p>
                 <input type="email" name="email" id="footerEmail" placeholder="email@email.com" />
-                <p id="emailError" class="form-error"></p>
-                <button id="submitBtn">Submit</button>
-            </div>            
+                <button>Submit</button>           
+            </div>
         </div>
     </footer>
-    <script src="../js/script.js"></script>  
-    <script src="../js/index.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/post.js"></script>
 </body>
 </html>
