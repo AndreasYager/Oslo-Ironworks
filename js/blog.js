@@ -52,7 +52,7 @@ function displayPosts(posts) {
         });
         
 
-        postsContainer.prepend(postElement); 
+        postsContainer.append(postElement); 
     });
 }
 
