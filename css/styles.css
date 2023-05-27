@@ -13,14 +13,14 @@ a {
 
 #postsContainer img {
   width: 70%;
-  height: 30vh;
+  height: 40vh;
   object-fit: cover;
 }
 
 #postsContainer {
-  width: 60%;
+  width: 80%;
   text-align: center;
-  margin-left: 20%
+  margin-left: 10%
 }
 
 h2 {
@@ -45,6 +45,7 @@ header {
 }
 
 .logo {
+    position: relative;
     width: relative;
     height: 8vh;
     margin-top: 2vh;
@@ -52,15 +53,16 @@ header {
 }
 
 header button {
-  position: relative;
-  right: 0px;
-  top: 0px;
-  padding: 2%;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 10.5%;
   background-color: #9fb7c4;
   color: #3d4f58;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   border: none;
   font-size: large;
+  
 }
 
 .headerlinks {
@@ -228,7 +230,7 @@ footer {
     display: flex;
     width: 85%;
     margin-inline: 7.5%;
-    height: 65vh;
+    height: 55vh;
     font-size: xx-small;
     
   }
@@ -296,4 +298,49 @@ footer {
 .post-specific p {
   width: 80%;
   margin-left: 10%;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 620px) {
+  .headerlinks {
+    display: none;
+  }
+
+  #sliderContainer p {
+    display: none;
+  }
+
+  .qlinks {
+    display: flex;
+    flex-direction: column;
+  }
+
+ .footflex {
+  flex-direction: column;
+ }
+
+ .mailinglist {
+  width: 100%;
+  padding: 0%;
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+ }
+
+ .mailinglist button {
+  width: 80%;
+  margin-left: 10%;
+ }
+
+ .textbox {
+  width: 80%;
+  margin-left: 10%;
+ }
+
+ #contactForm {
+  width: 80%;
+  margin-left: 10%;
+ }
+ 
 }

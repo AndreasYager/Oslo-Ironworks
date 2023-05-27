@@ -59,8 +59,14 @@ async function displaySliderPosts() {
     sliderPostsContainer.style.minHeight = `${previousHeight}px`;
     sliderPostsContainer.innerHTML = '';
 
-    const start = sliderIndex * 3 + 1;
-    const end = start + 3;
+   
+    let postsPerSlide = 3;
+    if (window.innerWidth <= 600) { 
+        postsPerSlide = 1;
+    }
+
+    const start = sliderIndex * postsPerSlide + 1;
+    const end = start + postsPerSlide;
 
     for (let i = start; i < end; i++) {
         const post = posts[i % posts.length];
