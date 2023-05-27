@@ -8,7 +8,7 @@ topBtn.addEventListener("click", function() {
 
 /*Scroll to mailing list*/
 document.getElementById("mail").addEventListener("click", function() {
-  var emailElement = document.getElementById("email");
+  var emailElement = document.getElementById("footerEmail");
   emailElement.scrollIntoView({behavior: "smooth"});
   setTimeout(function(){
       emailElement.focus();
