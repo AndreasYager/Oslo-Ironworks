@@ -9,29 +9,35 @@
 </head>
 <body>
     <header>
-        <a href="index.html"><img class="logo" src="images/OSLOIWlogo-removebg-preview.png" alt="Logo"/> </a>
-        <a href="blog.html">Blog</a>
-        <a class="active" href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-        <button id="mail">Join our mailing list</button>
+        <div class="headerflex">
+            <a href="index.html"><img class="logo" src="images/OSLOIWlogo-removebg-preview.png" alt="Logo"/> </a>
+            <div class="headerlinks">
+                <a href="blog.html">Blog</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <button id="mail">Join our mailing list!</button>
+        </div>
     </header>
     <main>
-        <div>Welcome to Oslo Ironworks, the premier American-style gym in the heart of Oslo. Our gym is designed to provide you with a world-class fitness experience that will help you reach your health and fitness goals. Our state-of-the-art equipment, expert trainers, and vibrant community make us the ultimate destination for fitness enthusiasts in Oslo. Whether you're looking to build muscle, increase your endurance, or simply improve your overall health, we've got you covered. Join us today and take the first step on your journey to a stronger, healthier you. Come lift with us at Oslo Ironworks and see the difference for yourself.</div>
+        <div class="aboutimg"><img src="images/OSLOIWlogo-removebg-preview.png" alt="Logo"/> </div>
+        <div class="textbox">Welcome to Oslo Ironworks, the premier American-style gym in the heart of Oslo. Our gym is designed to provide you with a world-class fitness experience that will help you reach your health and fitness goals. Our state-of-the-art equipment, expert trainers, and vibrant community make us the ultimate destination for fitness enthusiasts in Oslo. Whether you're looking to build muscle, increase your endurance, or simply improve your overall health, we've got you covered. Join us today and take the first step on your journey to a stronger, healthier you. Come lift with us at Oslo Ironworks and see the difference for yourself.</div>
     </main>
     <footer>
         <button id="topBtn">↑Back to top↑</button>
-        <div class="qlinks">
-            <h4>Quick links:</h4>
-            <a href="blog.html">Blog</a>
-            <a class="active" href="about.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
+        <div class="footflex">
+            <div class="qlinks"> 
+                <h4>Quick links:</h4> 
+                <a href="blog.html">Blog</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
             <div class="mailinglist">
                 <p>Join our mailing list!</p>
-                <label>
-                    Email:
-                    <input name="email" id="email" />
-                </label>
-            <button>Submit</button>
+                <input type="email" name="email" id="email" placeholder="email@email.com" />
+                <button>Submit</button>           
+            </div>
         </div>
     </footer>
 </body>
