@@ -223,12 +223,15 @@ footer {
 
   #sliderPostsContainer div {
     border-inline: solid 0.5px;
+    width: 100%;
   }
   
   #sliderContainer {
     display: flex;
-    width: 80%;
-    margin-inline: 10%;
+    width: 85%;
+    margin-inline: 7.5%;
+    height: 65vh;
+    font-size: xx-small;
     
   }
 
@@ -261,9 +264,39 @@ footer {
   }
 
   .aboutimg img{
-    width: relative;
-    height: 15vh;
+    width: 40%;
+    height: relative;
     justify-content: center;
-    margin-inline: 40%;
+    margin-left: 30%;
     margin-top: 5%;
   }
+
+  /*Blog*/
+
+#loadingText, #message {
+  margin-left: 10%;
+}
+
+/*Post*/
+
+.post-specific img {
+  width: 80%;
+  height: 45vh;
+  object-fit: cover;
+  margin-inline: 10%;
+  margin-top: 5%;
+}
+
+.post-specific {
+  background-color: #d9d9d9;
+  width: 80%;
+  margin: 10%;
+  text-align: center;
+  padding-bottom: 10%;
+}
+
+.post-specific p {
+  width: 80%;
+  margin-left: 10%;
+  m
+}
