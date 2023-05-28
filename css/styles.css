@@ -70,18 +70,50 @@ header button {
   
 }
 
-.headerlinks {
+.hamnav label {
   position: absolute;
-  margin-top: 1%;
-  text-align: center;
-  margin-left: 27%;
-  width: 50%;
-  justify-content: space-evenly;
-  align-items: center;
+  top: 0;
+  right: 0;
+  color: #3d4f58;
+  background-color: #9fb7c4;
+  font-style: normal;
+  font-size: xx-large;
+  padding: 5%;
+  width: 30%; 
+  height: 47%;
   display: flex;
-  font-size: larger;
+  justify-content: center;
+  align-items: center;
+  }
+
+#hamburger {
+  display: none;
 }
 
+.hamitems {
+  display: none;
+}
+
+.hamnav input:checked ~ .hamitems {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 60%;
+  position: absolute;
+  margin-top: 10%;
+  object-fit: contain;
+}
+
+.hamnav input:checked ~ .hamitems a {
+  margin: 0%;
+  text-decoration: none;
+  font-size: 1.2em;
+  background-color: #9fb7c4;
+  padding: 12px;
+  border: 3px solid;
+  border-color: #555555;
+  color: #3d4f58;
+}
 /*Footer*/
 footer {
   width: 100%;
@@ -320,7 +352,7 @@ footer {
 
 @media screen and (max-width: 820px) {
 
-  .headerlinks {
+  #mail {
     display: none;
   }
 
@@ -376,5 +408,34 @@ footer {
   width: 80%;
   margin-left: 10%;
  }
+
+ #featuredPostContainer img{
+  height: 50%;
+ }
  
+}
+
+/*Hamburger*/
+@media screen and (min-width: 820px) {
+  .hamnav label {
+    display: none;
+  }
+
+  .hamitems {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+  }
+
+  nav  {
+    position: absolute;
+    margin-top: 1%;
+    text-align: center;
+    margin-left: 27%;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    font-size: larger;
+  }
 }
