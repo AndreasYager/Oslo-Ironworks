@@ -124,7 +124,7 @@ footer {
 #topBtn {
   width: 100%;
   background-color: #486b8f;
-  color: #444444;
+  color: white;
   border: none;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   padding: 1%;
@@ -156,7 +156,7 @@ footer {
 }
 
 .mailinglist label {
-  display: none;
+  font-size: x-small;
 }
 
 .qlinks { 
