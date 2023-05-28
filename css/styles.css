@@ -124,7 +124,7 @@ footer {
 #topBtn {
   width: 100%;
   background-color: #486b8f;
-  color: #bfc9ca;
+  color: #444444;
   border: none;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   padding: 1%;
@@ -139,7 +139,7 @@ footer {
   bottom: 0px;
   right: 0px;
   background-color: #9fb7c4;
-  color: #3d4f58;
+  color: #444444;
   width: 20%;
   padding: 5%;
   text-align: center;
