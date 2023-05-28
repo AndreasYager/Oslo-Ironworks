@@ -117,7 +117,7 @@ header button {
 /*Footer*/
 footer {
   width: 100%;
-  background-color: #6a7e95;
+  background-color: #444444;
   
 }
 
@@ -155,6 +155,10 @@ footer {
   font-size: large;
 }
 
+.mailinglist label {
+  display: none;
+}
+
 .qlinks { 
   width: 100%;
   justify-content: space-evenly;
@@ -166,8 +170,10 @@ footer {
   margin-inline: 5%;
 }
 
-.qlinks h4 {
-  color: #3d4f58;
+.qlinks h1 {
+  color: #9fb7ca;
+  font-size: x-large;
+  margin-left: 0;
 }
 
 /*Blog*/
